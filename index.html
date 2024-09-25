@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Pye Bidding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>John Pye Bidding</h1>
+        <div class="input-group">
+            <label for="bid">Enter Bidding (£):</label>
+            <input type="number" id="bid" value="5.00" oninput="calculateTotal()">
+        </div>
+        
+        <p>25% Buyers Premium: £<span id="buyersPremium">1.25</span></p>
+        <p>20% VAT: £<span id="vat">1.00</span></p>
+        <p>VAT BP Buyers Premium: £<span id="vatBP">0.25</span></p>
+        
+        <div class="input-group">
+            <label for="delivery">Delivery (£):</label>
+            <input type="number" id="delivery" value="2.00" oninput="calculateTotal()">
+        </div>
+        
+        <h2>Total: £<span id="total">9.50</span></h2>
+        <button onclick="resetFields()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
